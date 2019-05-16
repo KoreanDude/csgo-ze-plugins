@@ -1,0 +1,28 @@
+"Phrases"
+{
+	"ShowName"
+	{
+		"en"	"Show Name (To Under the Crosshair)"
+		"jp"	"Show Name (レティクル下の名前表示)"
+	}
+	"Enabled"
+	{
+		"en"	"Enabled"
+		"jp"	"有効"
+	}
+	"Disabled"
+	{
+		"en"	"Disabled"
+		"jp"	"無効"
+	}
+	"EnabledMsg"
+	{
+		"en"	"ShowName has been {blue}Enabled."
+		"jp"	"ShowName を {blue}有効 にしました."
+	}
+	"DisabledMsg"
+	{
+		"en"	"ShowName has been {lightred}Disabled."
+		"jp"	"ShowName を {lightred}無効 にしました."
+	}
+}
