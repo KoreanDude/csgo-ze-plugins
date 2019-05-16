@@ -1,0 +1,123 @@
+"Phrases"
+{
+	"Cookie_Menu"
+	{
+		"en"	"Map Music"
+		"jp"	"Map Music (マップBGM)"
+	}
+
+	"Text_MapMusicEnable"
+	{
+		"en"	"Map music is {lightgreen}Enabled{default}."
+		"jp"	"マップのBGMを {lightgreen}有効{default} にしました."
+	}
+	
+	"Text_MapMusicEnable2"
+	{
+		"en"	"Map music is {lightgreen}Enabled{default}. It starts from the next music!"
+		"jp"	"マップのBGMを {lightgreen}有効{default} にしました."
+	}
+
+	"Text_MapMusicDisable"
+	{
+		"en"	"Map music is {lightgreen}Disabled{default}."
+		"jp"	"マップのBGMを {lightgreen}無効{default} にしました."
+	}
+
+	"Text_MapMusicVolume"
+	{
+		"#format"	"{1:d}"
+
+		"en"	"Map music is {lightgreen}Enabled{default}. Volume: {lightgreen}{1}"
+		"jp"	"マップのBGMが {lightgreen}有効{default} です. 音量: {lightgreen}{1}"
+	}
+
+	"Text_Saving"
+	{
+		"#format"	"{1:t}"
+
+		"en"	"Saving map music settings is {lightgreen}{1}"
+		"jp"	"設定の保存を {lightgreen}{1} {default}にしました"
+	}
+
+	"Enabled"
+	{
+		"en"	"Enabled"
+		"jp"	"有効"
+		"ko"	"활성화"
+	}
+
+	"Disabled"
+	{
+		"en"	"Disabled"
+		"jp"	"無効"
+		"ko"	"비활성화"
+	}
+
+	"Menu_Title"
+	{
+		"en"	"[MapMusic] Sound Control Menu"
+		"jp"	"[マップBGM] サウンドコントロールメニュー"
+	}
+
+	"Menu_AdjustDesc"
+	{
+		"en"	"You can use volume control instead of fully stopping\nFor adjust volume is \"!music or !mapmusic <0-100>\""
+		"jp"	"完全に無効にする代わりに音量の調節もできます\n\"!music or !mapmusic <0-100>\" を入力"
+	}
+
+	"MP3"
+	{
+		"en"	"mp3"
+		"jp"	"mp3"
+	}
+
+	"Wav"
+	{
+		"en"	"wav"
+		"jp"	"wav"
+	}
+
+	"WavMp3"
+	{
+		"en"	"wav & mp3"
+		"jp"	"wav & mp3"
+	}
+
+	"StopAll"
+	{
+		"en"	"Stop All"
+		"jp"	"全て停止"
+	}
+
+	"Menu_Act"
+	{
+		"#format"	"{1:T}"
+
+		"en"	"Action: {1}"
+		"jp"	"アクション: {1}"
+	}	
+
+	"Menu_Music"
+	{
+		"#format"	"{1:T}"
+
+		"en"	"Music: {1}"
+		"jp"	"マップBGM: {1}"
+	}
+
+	"Menu_Save"
+	{
+		"#format"	"{1:T}"
+
+		"en"	"Save: {1}"
+		"jp"	"設定の保存: {1}"
+	}
+
+	"Menu_Vol"
+	{
+		"#format"	"{1:d}"
+
+		"en"	"Volume: {1}"
+	}
+}
