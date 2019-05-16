@@ -1,0 +1,33 @@
+
+/*
+ * quack
+*/
+
+"Games"
+{
+	"#default"
+	{
+		"Signatures"
+		{
+			"PassServerEntityFilter"
+			{
+				"library"    "server"
+				"windows"    "\x55\x8B\xEC\x56\x8B\x2A\x2A\x85\x2A\x75\x2A\xB0\x2A\x5E"
+				"linux"        "@_Z22PassServerEntityFilterPK13IHandleEntityS1_"
+			}
+		}
+	}
+	
+	"csgo"
+	{
+		"Signatures"
+		{
+			"PassServerEntityFilter"
+			{
+				"library"	"server"
+				"windows"	"\x56\x8B\xF2\x57\x8B\xF9\x85\xF6\x74\x2A\x3B\xFE"
+				"linux"		"\x55\xB8\x01\x00\x00\x00\x89\xE5\x83\xEC\x38\x89\x5D\xF4"
+			}
+		}
+	}
+}
