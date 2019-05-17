@@ -271,7 +271,7 @@ public Action Command_galil(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -311,7 +311,7 @@ public Action Command_ak(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -351,7 +351,7 @@ public Action Command_sg556(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -391,7 +391,7 @@ public Action Command_nova(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -432,7 +432,7 @@ public Action Command_xm1014(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -473,7 +473,7 @@ public Action Command_mac10(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -514,7 +514,7 @@ public Action Command_mp9(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -555,7 +555,7 @@ public Action Command_mp7(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -596,7 +596,7 @@ public Action Command_mp5(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -637,7 +637,7 @@ public Action Command_ump45(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -678,7 +678,7 @@ public Action Command_m249(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -719,7 +719,7 @@ public Action Command_negev(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -760,7 +760,7 @@ public Action Command_bizon(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -801,7 +801,7 @@ public Action Command_p90(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -842,7 +842,7 @@ public Action Command_scar(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	if(!g_SniperEnabled.BoolValue)
@@ -889,7 +889,7 @@ public Action Command_awp(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	if(!g_SniperEnabled.BoolValue)
@@ -936,7 +936,7 @@ public Action Command_ssg08(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	if(!g_SniperEnabled.BoolValue)
@@ -983,7 +983,7 @@ public Action Command_m4a1(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -1024,7 +1024,7 @@ public Action Command_m4a1s(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -1065,7 +1065,7 @@ public Action Command_aug(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
@@ -1107,7 +1107,7 @@ public Action Command_famas(int client,int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	if(g_iSpam[client] > GetTime())
 	{
-		PrintToChat(client, " \x04[BuyCommands]\x06 %i초 후에 재구매가 가능합니다.",g_iSpam[client]-GetTime());
+		PrintToChat(client, " \x04[BuyCommands]\x06 You can purchase it again in %i seconds.",g_iSpam[client]-GetTime());
 		return Plugin_Handled;
 	}
 	//Declaring the client's money
