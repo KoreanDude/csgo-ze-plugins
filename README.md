@@ -1,4 +1,8 @@
 # csgo-ze-plugins
 
-The plugins posted here are used by my server, and most of the plugins, except some of the plugins created by other users, are plugins I modified a very little bit.
-sorry my horrible english
+The csgo ze plugins are mostly private plugins and hard to find. So I created this Github to share with ze server administrators.
+These are the plugins and extensions in use on my server, and most plugins were created by other users. And I did a little modification, not much different from the original.
+
+and I also share the entWatch cfg files so you can use them if you need them.
+
+https://github.com/KoreanDude/entWatch-cfg
