@@ -3,45 +3,37 @@
 #include <sourcemod>
 #include <sdktools>
 #include <zombiereloaded>
+#include <colorvariables>
 #include <cstrike>
 
 bool started;
-bool roundend;
 int ctscore;
 int trscore;
+
+ConVar g_HE_Amount;
+ConVar g_HE_Enable;
+ConVar g_Elite_Enable;
 
 public Plugin myinfo =
 {
 	name = "[ZR] Force Teams",
-	author = "Franc1sco franug",
+	author = "Franc1sco franug, simpson0141, Modified by. Someone",
 	description = "",
-	version = "2.2",
+	version = "2.3",
 	url = "http://steamcommunity.com/id/franug"
 };
 
 public void OnPluginStart() 
 {
-	HookEvent("player_spawn", OnSpawn, EventHookMode_Pre);
-	
+	g_Elite_Enable = CreateConVar("Elite_Enable", "1");
+	g_HE_Enable = CreateConVar("HE_Enable", "1");
+	g_HE_Amount = CreateConVar("HE_Amount", "3");
+
+	HookEvent("player_spawn", OnSpawn, EventHookMode_Post);
 	HookEvent("round_start", EventRoundStart, EventHookMode_Pre);
 	HookEvent("round_end", EventRoundEnd, EventHookMode_Pre);
 	
-	AddCommandListener(SelectTeam, "jointeam");
-}
-
-public Action:SelectTeam(client, const String:command[], args)
-{
-	if(client && args)
-	{
-		decl String:team[2];
-		GetCmdArg(1, team, sizeof(team));
-		switch(StringToInt(team))
-		{
-			case CS_TEAM_T: if(!roundend) ClientCommand(client, "zspawn");
-			case CS_TEAM_CT: if(!roundend) ClientCommand(client, "zspawn");
-		}
-	}
-	return Plugin_Continue;
+	AutoExecConfig();
 }
 
 public Action OnSpawn(Handle event, const char[] name, bool dontBroadcast) 
@@ -49,8 +41,30 @@ public Action OnSpawn(Handle event, const char[] name, bool dontBroadcast)
 	new client = GetClientOfUserId(GetEventInt(event, "userid"));
 	
 	if(!started)
-		if(GetClientTeam(client) == CS_TEAM_T)
-			CS_SwitchTeam(client, CS_TEAM_CT);
+		if(GetClientTeam(client) == CS_TEAM_T) CS_SwitchTeam(client, CS_TEAM_CT);
+	
+	CreateTimer(1.0, GiveWeapons, client);
+}
+
+public Action GiveWeapons(Handle timer, any client)
+{
+	if(!IsClientInGame(client)) return;
+	if(!IsPlayerAlive(client)) return;
+
+	new pistol = GetPlayerWeaponSlot(client, 1);
+	new knife = GetPlayerWeaponSlot(client, 2);
+	
+	if(!IsValidEdict(knife))
+		FakeClientCommand(client, "use %d", GivePlayerItem(client, "weapon_knife"));
+		
+	if(ZR_IsClientHuman(client))
+	{
+		if(g_HE_Enable.BoolValue) Grenade(client, g_HE_Amount.IntValue);
+		
+		if(!IsValidEdict(pistol))
+			if(g_Elite_Enable.BoolValue) FakeClientCommand(client, "use %d", GivePlayerItem(client, "weapon_elite"));
+	}
+	else return;
 }
 
 public Action EventRoundStart(Handle event, const char[] name, bool dontBroadcast) 
@@ -58,13 +72,11 @@ public Action EventRoundStart(Handle event, const char[] name, bool dontBroadcas
 	ctscore = GetTeamScore(3);
 	trscore = GetTeamScore(2);
 	
-	roundend = false;
 	started = false;
 }
 
 public Action EventRoundEnd(Handle event, const char[] name, bool dontBroadcast) 
 {
-	roundend = true;
 	CreateTimer(1.0, Check);
 }
 
@@ -76,6 +88,20 @@ public Action Check(Handle timer)
 public int ZR_OnClientInfected(int client, int attacker, bool motherInfect, bool respawnOverride, bool respawn)
 {
 	if(!started) started = true;
+	
+	CreateTimer(1.0, GiveWeapons2, client);
+}
+
+public Action GiveWeapons2(Handle timer, any client)
+{
+	if(!IsClientInGame(client)) return;
+	if(!IsPlayerAlive(client)) return;
+	
+	new knife = GetPlayerWeaponSlot(client, 2);
+	
+	if(!IsValidEdict(knife))
+		FakeClientCommand(client, "use %d", GivePlayerItem(client, "weapon_knife"));
+	else return;
 }
 
 public Action CS_OnTerminateRound(float &delay, CSRoundEndReason &reason)
@@ -106,4 +132,12 @@ public Action CS_OnTerminateRound(float &delay, CSRoundEndReason &reason)
 	else return Plugin_Continue;
 	
 	return Plugin_Continue;
+}
+
+public Grenade(client, amount)
+{
+	new offset2 = FindDataMapInfo(client, "m_iAmmo")+(4*14);
+	new current2 = GetEntData(client, offset2,4);
+	if (current2 == 0) GivePlayerItem(client, "weapon_hegrenade");
+	SetEntData(client, offset2, amount);
 }
