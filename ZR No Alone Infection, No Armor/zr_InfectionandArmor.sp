@@ -8,7 +8,7 @@ public Plugin:myinfo =
 	name = "[ZR] No Alone Infection & No Armor",
 	author = "DSASDFGH, REZOR, Modified by. Someone",
 	description = "",
-	version = "1.0",
+	version = "1.1",
 	url = ""
 }
 
@@ -26,7 +26,14 @@ public OnPluginStart()
 public Action:ZR_OnClientInfect(&client, &attacker, &bool:motherInfect, &bool:respawnOverride, &bool:respawn)
 {
 	new players = GetClientCount(true);
-	if(players <= g_InfectionMinPlayer.IntValue || !g_InfectionEnabled.BoolValue)
+	
+	if(!g_InfectionEnabled.BoolValue)
+	{
+		CPrintToChatAll("{green}[ZR]{lightred} infect is disabled.");
+		return Plugin_Handled;
+	}
+	
+	if(players <= g_InfectionMinPlayer.IntValue)
 	{
 		CPrintToChatAll("{green}[ZR]{lightred} There aren't enough players to create a zombie.");
 		return Plugin_Handled;
