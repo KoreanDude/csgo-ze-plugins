@@ -17,8 +17,6 @@ public Plugin:myinfo =
 
 public OnPluginStart()
 {
-	LoadTranslations("ShowDMG.phrases");
-
 	g_hClientCookie = RegClientCookie("ShowDamage", "Toggle show damage", CookieAccess_Private);
 	
 	for (new i = 1; i <= MaxClients; ++i)
