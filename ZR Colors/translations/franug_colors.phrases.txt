@@ -162,7 +162,7 @@
 	{
 		"en" 	"Color has been applied. You can check with the {lightgreen}!tp{blue} command."
 	}
-	"Color Apply"
+	"Color Only Human"
 	{
 		"en" 	"{red}Applied after spawn as a human."
 	}
