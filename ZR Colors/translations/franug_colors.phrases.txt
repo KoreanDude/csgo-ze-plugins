@@ -1,0 +1,169 @@
+"Phrases"
+{
+	"color_normal"
+	{
+		"en"			"normal"
+		"es"			"normal"
+		"ru"			"Стандартный"
+	}
+	"color_red"
+	{
+		"en"			"red"
+		"es"			"rojo"
+		"ru"			"Красный"
+	}
+	"color_green"
+	{
+		"en"			"green"
+		"es"			"verde"
+		"ru"			"Зелёный"
+	}
+	"color_blue"
+	{
+		"en"			"blue"
+		"es"			"azul"
+		"ru"			"Синий"
+	}
+	"color_yellow"
+	{
+		"en"			"yellow"
+		"es"			"amarillo"
+		"ru"			"Жёлтый"
+	}
+	"color_purple"
+	{
+		"en"			"purple"
+		"es"			"morado"
+		"ru"			"Пурпурный"
+	}
+	"color_cyan"
+	{
+		"en"			"cyan"
+		"es"			"cian"
+		"ru"			"Голубой"
+	}
+	"color_orange"
+	{
+		"en"			"orange"
+		"es"			"naranja"
+		"ru"			"Оранжевый"
+	}
+	"color_pink"
+	{
+		"en"			"pink"
+		"es"			"rosa"
+		"ru"			"Розовый"
+	}
+	"color_olive"
+	{
+		"en"			"olive"
+		"es"			"olivo"
+		"ru"			"Оливковый"
+	}
+	"color_lime"
+	{
+		"en"			"lime"
+		"es"			"lima"
+		"ru"			"Лаймовый"
+	}
+	"color_violet"
+	{
+		"en"			"violet"
+		"es"			"violeta"
+		"ru"			"Фиолетовый"
+	}
+	"color_lightblue"
+	{
+		"en"			"lightblue"
+		"es"			"azul claro"
+		"ru"			"Светло-синий"
+	}
+	"color_silver"
+	{
+		"en"			"silver"
+		"es"			"plata"
+		"ru"			"Серебряный"
+	}
+	"color_chocolate"
+	{
+		"en"			"chocolate"
+		"es"			"chocolate"
+		"ru"			"Шоколадный"
+	}
+	"color_saddlebrown"
+	{
+		"en"			"saddlebrown"
+		"es"			"marrón silla"
+		"ru"			"Коричневый"
+	}
+	"color_indigo"
+	{
+		"en"			"indigo"
+		"es"			"índigo"
+		"ru"			"Индиго"
+	}
+	"color_ghostwhite"
+	{
+		"en"			"ghostwhite"
+		"es"			"blanco fantasmal"
+		"ru"			"Призрачно-белый"
+	}
+	"color_thistle"
+	{
+		"en"			"thistle"
+		"es"			"cardo"
+		"ru"			"Чертополох"
+	}
+	"color_aliceblue"
+	{
+		"en"			"aliceblue"
+		"es"			"alice azul"
+		"ru"			"Бледно-голубой"
+	}
+	"color_steelblue"
+	{
+		"en"			"steelblue"
+		"es"			"azul plateado"
+		"ru"			"Стальной синий"
+	}
+	"color_teal"
+	{
+		"en"			"teal"
+		"es"			"café"
+		"ru"			"Бирюзовый"
+	}
+	"color_gold"
+	{
+		"en"			"gold"
+		"es"			"oro"
+		"ru"			"Золотой"
+	}
+	"color_tan"
+	{
+		"en"			"tan"
+		"es"			"bronceado"
+		"ru"			"Желтовато-коричневый"
+	}
+	"color_tomato"
+	{
+		"en"			"tomato"
+		"es"			"tomate"
+		"ru"			"Томатный"
+	}
+	"Only Group Member"
+	{
+		"en" 	"{lightred}Only Steam group members can use this feature!"
+	}
+	"Color Title"
+	{
+		"en" 	"- It applies only to humans! -"
+	}
+	"Color Apply"
+	{
+		"en" 	"Color has been applied. You can check with the {lightgreen}!tp{blue} command."
+	}
+	"Color Apply"
+	{
+		"en" 	"{red}Applied after spawn as a human."
+	}
+}
