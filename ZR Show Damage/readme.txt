@@ -1,2 +1,3 @@
 - add clienrprefs
 - change fontsize
+- fix some bug
