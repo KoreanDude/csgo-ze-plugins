@@ -101,10 +101,12 @@ new Handle:G_hCvar_DisplayEnabled    = INVALID_HANDLE;
 new Handle:G_hCvar_DisplayCooldowns  = INVALID_HANDLE;
 new Handle:G_hCvar_ModeTeamOnly      = INVALID_HANDLE;
 new Handle:G_hCvar_ConfigColor       = INVALID_HANDLE;
+ConVar     G_hCvar_DefaultHudPos;
 
 new bool:G_bRoundTransition  = false;
 new bool:G_bConfigLoaded     = false;
 //new Handle:EntHud;
+float DefaultHudPos[2];
 
 //----------------------------------------------------------------------------------------------------
 // Purpose:
@@ -129,6 +131,7 @@ public OnPluginStart()
 	G_hCvar_DisplayCooldowns  = CreateConVar("entwatch_display_cooldowns", "1", "Show/Hide the cooldowns on the display.", 0, true, 0.0, true, 1.0);
 	G_hCvar_ModeTeamOnly      = CreateConVar("entwatch_mode_teamonly", "1", "Enable/Disable team only mode.", 0, true, 0.0, true, 1.0);
 	G_hCvar_ConfigColor       = CreateConVar("entwatch_config_color", "color_classic", "The name of the color config.", 0);
+	G_hCvar_DefaultHudPos	  = CreateConVar("entwatch_default_hudpos", "0.0 0.4", "default hudpos.");
 	
 	G_hCookie_Display     = RegClientCookie("entwatch_display", "", CookieAccess_Private);
 	G_hCookie_Restricted  = RegClientCookie("entwatch_restricted", "", CookieAccess_Private);
@@ -996,6 +999,14 @@ public Action:Timer_DisplayHUD(Handle:timer, Any:client)
 			
 			if(ItemIdx >= 2)
 			{
+				char DefPosition[2][8];
+				char DefPosValue[16];
+				G_hCvar_DefaultHudPos.GetString(DefPosValue, sizeof(DefPosValue));
+				ExplodeString(DefPosValue, " ", DefPosition, sizeof(DefPosition), sizeof(DefPosition[]));
+
+				DefaultHudPos[0] = StringToFloat(DefPosition[0]);
+				DefaultHudPos[1] = StringToFloat(DefPosition[1]);
+				
 				for(int i = 1; i <= MaxClients; i++)
 				{
 					if(IsClientInGame(i) && !IsFakeClient(i))
@@ -1003,7 +1014,7 @@ public Action:Timer_DisplayHUD(Handle:timer, Any:client)
 						if (G_bDisplay2[i])
 						{
 							if(HudPosition[i][0] <= 0.0 && HudPosition[i][1] <= 0.0)
-								SetHudTextParams(0.0, 0.38, 1.1, 255, 255, 255, 255, 0, 0.0, 0.0, 0.0);
+								SetHudTextParams(DefaultHudPos[0], DefaultHudPos[1], 1.1, 255, 255, 255, 255, 0, 0.0, 0.0, 0.0);
 							else
 								SetHudTextParams(HudPosition[i][0], HudPosition[i][1], 1.1, 255, 255, 255, 255, 0, 0.0, 0.0, 0.0);
 							ShowHudText(i, 5, buffer_hud);
