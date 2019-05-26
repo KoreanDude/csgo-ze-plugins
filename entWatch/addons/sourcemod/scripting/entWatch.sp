@@ -136,7 +136,7 @@ public OnPluginStart()
 	G_hCookie_Display     = RegClientCookie("entwatch_display", "", CookieAccess_Private);
 	G_hCookie_Restricted  = RegClientCookie("entwatch_restricted", "", CookieAccess_Private);
 	
-	//EntHud = CreateHudSynchronizer();
+	G_hCvar_DefaultHudPos.AddChangeHook(ConVarChange);
 	
 	RegConsoleCmd("sm_hud", Command_ToggleHUD);
 	RegConsoleCmd("sm_status", Command_Status);
@@ -159,13 +159,26 @@ public OnPluginStart()
 	LoadTranslations("entWatch.phrases");
 	LoadTranslations("common.phrases");
 	
-	//G_hCvar_HudPosition.AddChangeHook(ConVarChange);
-	
-	AutoExecConfig(true, "plugin.entWatch");
-	
-	//GetConVars();
+	AutoExecConfig(true);
+	GetConVars();
 	
 	AddCommandListener(Command_JoinTeam, "jointeam");
+}
+
+public void GetConVars()
+{
+	char DefPosition[2][8];
+	char DefPosValue[16];
+	G_hCvar_DefaultHudPos.GetString(DefPosValue, sizeof(DefPosValue));
+	ExplodeString(DefPosValue, " ", DefPosition, sizeof(DefPosition), sizeof(DefPosition[]));
+
+	DefaultHudPos[0] = StringToFloat(DefPosition[0]);
+	DefaultHudPos[1] = StringToFloat(DefPosition[1]);
+}
+
+public void ConVarChange(ConVar convar, char[] oldValue, char[] newValue)
+{
+	GetConVars();
 }
 
 public Action:Command_JoinTeam(client, const String:command[], argc)  
@@ -999,14 +1012,6 @@ public Action:Timer_DisplayHUD(Handle:timer, Any:client)
 			
 			if(ItemIdx >= 2)
 			{
-				char DefPosition[2][8];
-				char DefPosValue[16];
-				G_hCvar_DefaultHudPos.GetString(DefPosValue, sizeof(DefPosValue));
-				ExplodeString(DefPosValue, " ", DefPosition, sizeof(DefPosition), sizeof(DefPosition[]));
-
-				DefaultHudPos[0] = StringToFloat(DefPosition[0]);
-				DefaultHudPos[1] = StringToFloat(DefPosition[1]);
-				
 				for(int i = 1; i <= MaxClients; i++)
 				{
 					if(IsClientInGame(i) && !IsFakeClient(i))
