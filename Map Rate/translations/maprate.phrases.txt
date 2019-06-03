@@ -1,0 +1,275 @@
+﻿"Phrases"
+{
+    "5 Star"
+    {
+		"en"	    "Excellent"
+		"fr"	  "Excellent"
+		"de"		"Hervorragend"
+  		"ru"		"Отличная"
+    }
+
+    "4 Star"
+    {
+		"en"	    "Good"
+		"fr"	  	"Bien"
+		"de"		"Gut"
+  		"ru"		"Хорошая"
+    }
+
+    "3 Star"
+    {
+		"en"	    "Average"
+		"fr"		"Moyen"
+		"de"		"Durchschnitt"
+  		"ru"		"Средняя"
+    }
+
+    "2 Star"
+    {
+		"en"	    "Poor"
+		"fr"		"Faible"
+		"de"		"Schwach"
+  		"ru"		"Плохая"
+    }
+
+    "1 Star"
+    {
+		"en"	    "Terrible"
+		"fr"	  	"Horrible"
+		"de"		"Schrecklich"
+  		"ru"		"Ужасная"
+    }
+	
+	"5 Star Self"
+    {
+		"en"	    "Excellent"
+		"fr"	  "Excellent"
+		"de"		"Hervorragend"
+  		"ru"		"Отличная"
+    }
+
+    "4 Star Self"
+    {
+		"en"	    "Good"
+		"fr"	  	"Bien"
+		"de"		"Gut"
+  		"ru"		"Хорошая"
+    }
+
+    "3 Star Self"
+    {
+		"en"	    "Average"
+		"fr"		"Moyen"
+		"de"		"Durchschnitt"
+  		"ru"		"Средняя"
+    }
+
+    "2 Star Self"
+    {
+		"en"	    "Poor"
+		"fr"		"Faible"
+		"de"		"Schwach"
+  		"ru"		"Плохая"
+    }
+
+    "1 Star Self"
+    {
+		"en"	    "Terrible"
+		"fr"	  	"Horrible"
+		"de"		"Schrecklich"
+  		"ru"		"Ужасная"
+    }
+
+    "Dismiss"
+    {
+		"ko"        "Dismiss"
+        "en"        "Dismiss"
+		"fr"    	"Ignorer"
+        "de"        "Ausgelassen"
+        "ru"		"Не голосовать"
+    }
+
+    "Rating"
+    {
+		"#format"   "{1:d}"
+		"en"	    "{1} rating"
+		"fr"	  	"{1} note"
+		"de"		"{1} Bewertung"
+  		"ru"		"{1} оценка"
+    }
+
+    "Rating Plural"
+    {
+		"#format"   "{1:d}"
+		"en"	    "{1} ratings"
+		"fr"		"{1} notes"
+		"de"		"{1} Bewertungen"
+  		"ru"		"{1} оценок"
+    }
+	
+	"Current Map"
+    {
+		"en"	    "Current Map Infomation"
+    }
+
+    "Ordered by Rating"
+    {
+		"en"	    "All Maps Ordered by Rating"
+		"fr"		"Toutes Maps Classées par Note"
+		"de"		"Alle Karten Sortiert nach Bewertung"
+  		"ru"		"Карты упорядочены по рейтингу"
+    }
+
+    "Ordered by Map Name"
+    {
+		"en"	    "All Maps Ordered by Map Name"
+		"fr"		"Toutes Maps Classées par Nom"
+		"de"		"Alle Karten Sortiert nach Name"
+  		"ru"		"Карты упорядочены по названиям"
+    }
+
+    "Ordered by Rating Title"
+    {
+		"en"	    "Map Ratings Ordered by Rating\n "
+		"fr"		"Notes des Maps Classées par Note\n "
+		"de"		"Karten Bewertungen Sortiert nach Bewertung\n "
+  		"ru"		"Оценки карт упорядочены по убыванию\n "
+    }
+
+    "Ordered by Map Name Title"
+    {
+		"en"	    "Map Ratings Ordered by Map Name\n "
+		"fr"		"Notes des Maps Classées par Nom\n "
+		"de"		"Karten Bewertungen Sortiert nach Name\n "
+  		"ru"		"Оценки карт упорядочены по названиям\n "
+    }
+
+    "View Ratings"
+    {
+		"en"	    "View Map Ratings\n "
+		"fr"		"Voir les Notes des Maps\n "
+		"de"		"Karten Bewertungen ansehen\n "
+  		"ru"		"Просмотреть оценки карт\n "
+    }
+
+    "Ratings Title"
+    {
+		"#format"   "{1:s}"
+		"en"	    "Ratings for {1}\n "
+		"fr"		"Notes pour {1}\n "
+		"de"		"Bewertung fьr {1}\n "
+  		"ru"		"Оценки для {1}\n "
+    }
+
+    "Average Rating"
+    {
+		"#format"   "{1:.1f}"
+		"en"	    "Average Rating: {1}"
+		"fr"		"Note Moyenne : {1}"
+		"de"		"Durchschnittliche Bewertung: {1}"
+  		"ru"		"Средняя оценка: {1}"
+    }
+	
+	"Other Maps Results"
+    {
+		"#format"   "{1:.1f},{2:s},{3:d}"
+		"en"	    "{1} {2} {3}"
+	}
+
+    "Your Rating"
+    {
+		"#format"   "{1:d}"
+		"en"	    "Your Rating: {1}\n "
+		"fr"		"Votre Note : {1}\n "
+		"de"		"Deine Bewertung: {1}\n "
+  		"ru"		"Ваша оценка: {1}\n "
+    }
+
+    "Rate Map"
+    {
+		"en"	    "Rate this map"
+		"fr"		"Noter cette map"
+		"de"		"Bewerte diese Karte"
+  		"ru"		"Оценить карту"
+    }
+
+    "Rate Map Title"
+    {
+		"#format"   "{1:s}"
+		"en"	    "Please rate {1}"
+		"fr"		"Merci de noter {1}"
+		"de"		"Bitte bewerte {1}"
+  		"ru"		"Оцените карту {1}"
+    }
+
+    "Previous Rating"
+    {
+		"#format"   "{1:d}"
+		"en"	    "You previously rated this map: {1}"
+		"fr"		"Vous avez précédemment noté cette map : {1}"
+		"de"		"Deine vorherige Bewertung dieser Karte: {1}"
+  		"ru"		"Вы уже оценили эту карту как: {1}"
+    }
+
+    "Change Rating"
+    {
+		"en"	    "Change my rating"
+		"fr"		"Changer ma note"
+		"de"		"Ändere meine Bewertung"
+  		"ru"		"Изменить мою оценку"
+    }
+
+    "Everyone Rate Command"
+    {
+		"en"	    "Have All Players Rate This Map"
+		"fr"		"Faire Noter Cette Map à Tous les Joueurs"
+		"de"		"Haben alle Spieler diese Karte Bewertet?"
+  		"ru"		"Потребовать оценок карты от всех игроков"
+    }
+
+    "Everyone Rate Title"
+    {
+		"#format"   "{1:s},{2:s}"
+		"en"	    "{1} has requested that you rate {2}"
+		"fr"		"{1} a demandé que vous notiez {2}"
+		"de"		"{1} hat gefordert das du {2} bewertest."
+  		"ru"		"{1} потребовал чтобы вы оценили карту {2}"
+    }
+	
+	"Current Map Announce"
+	{
+		"#format"   "{1:d},{2:.1f}"
+		"en"	    "{default}Current map is rated {blue}{2} rating{default} by {blue} {1} users. {default}You can use {green}!rate{default} for map ratings and more info."
+	}
+	
+	"Current Map Announce Not Rated"
+	{
+		"en"	    "{default}Current map has not been rated yet. You can use {green}!rate{default} for map ratings and more info."
+	}
+
+    "Successful Rate"
+    {
+		"#format"   "{1:s}"
+		"en"	    "{default}You successfully rated {blue}{1}"
+		"fr"		"Vous avez bien noté {1}"
+		"de"		"Du hast erfolgreich {1} bewertet."
+  		"ru"		"Вы успешно оценили карту {1}"
+    }
+
+    "Already Rated"
+    {
+		"#format"   "{1:d}"
+		"en"	    "{lightred}You already rated this map a {green}{1}{lightred} and cannot change your vote"
+		"fr"		"Vous avez déjà noté cette map {1} et ne pouvez pas changer votre vote"
+		"de"		"Du hast dieser Karte schon eine {1} gegeben und kannst deine Wahl nicht ändern."
+  		"ru"		"Вы уже оценили {1} и не можете изменить свою оценку"
+    }
+
+    "Database Error"
+    {
+		"en"	    "A database error occurred. Please try again later."
+		"fr"		"Erreur de base de données. Merci d'essayer ultérieurement."
+		"de"		"Ein Datenbak Fehler ist aufgetreten. Bitte versuche es später nochmal."
+  		"ru"		"Ошибка базы данных, Попробуйте позже"
+    }
+}
