@@ -1271,7 +1271,7 @@ public Action Command_he(int client, int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	
 	int cmoney = GetClientMoney(client);
-	int gunprice = g_FlashPrice.IntValue;
+	int gunprice = g_HEPrice.IntValue;
 
 	if (cmoney > gunprice)
 	{
@@ -1317,7 +1317,7 @@ public Action Command_decoy(int client, int args)
 	if(!IsPlayerAlive(client) || !IsClientInGame(client) || !IsValidClient(client) || !ZR_IsClientHuman(client)) return Plugin_Handled;
 	
 	int cmoney = GetClientMoney(client);
-	int gunprice = g_FlashPrice.IntValue;
+	int gunprice = g_DecoyPrice.IntValue;
 
 	if (cmoney > gunprice)
 	{
