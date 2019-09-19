@@ -4,13 +4,11 @@
 #include <sourcemod>
 #include <sdktools>
 #include <sdkhooks>
-#include <store>
 
 #define LINES 32
 #pragma newdecls required
 
 char Buffer[LINES][64];
-ConVar HitCredits, NeedPlayers;
 Handle BossName = INVALID_HANDLE;
 
 public Plugin myinfo = {
@@ -21,10 +19,7 @@ public Plugin myinfo = {
 
 public void OnPluginStart()
 {
-	HookEntityOutput("math_counter", "OutValue", DamageCounter);
-	
-	HitCredits = CreateConVar("sm_hitmarker_credits", "1", "");
-	NeedPlayers = CreateConVar("sm_hitmarker_needplayers", "16", "");
+	HookEntityOutput("math_counter", "OutValue", DamageCounter)
 }
 
 public void OnMapStart()
