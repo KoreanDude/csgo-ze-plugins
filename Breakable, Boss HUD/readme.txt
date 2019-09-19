@@ -1,0 +1,2 @@
+- Fixes an issue where the HUD health increases you hit a specific math_counter entity
+- Fixed HUD messages only after damage to entity
