@@ -1,4 +1,4 @@
 - After the round, the Boss Hit Rank is printed on the HUD.
 - Enter the boss name in configs - bossname - mapname.cfg, Boss Hit Rank is only active for entities created in cfg.
 - Share the cfg in the same path as the Boss Hit Marker plugin.
-- You need testing on a lot of servers. I think this plugin is not stable yet.
+- I think this plugin is not stable yet.
