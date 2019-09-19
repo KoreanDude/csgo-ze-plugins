@@ -1,2 +1,2 @@
 - Fixed an issue where the HUD health increases you hit a specific map math_counter entity (like ze_s_a_m)
-- Fixed HUD print messages only after damage to entity
+- Fixed HUD print messages only after damage to entity (not stable)
