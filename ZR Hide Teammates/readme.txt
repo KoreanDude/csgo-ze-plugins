@@ -1,0 +1,1 @@
+- Fixed to apply only to humans and zombies. (GetClientTeam function does not apply sometimes)
