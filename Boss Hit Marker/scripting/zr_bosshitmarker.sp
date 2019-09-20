@@ -19,7 +19,7 @@ public Plugin myinfo = {
 
 public void OnPluginStart()
 {
-	HookEntityOutput("math_counter", "OutValue", DamageCounter)
+	HookEntityOutput("math_counter", "OutValue", DamageCounter);
 }
 
 public void OnMapStart()
