@@ -104,27 +104,8 @@ public Action OnTakeDamage(int entity, int &attacker, int &inflictor, float &dam
 
 	if (IsValidEntity(entity) && IsValidClient(attacker))
 	{
-		int spmode, target;
-        
 	    SetHudTextParams(-1.0, -1.0, 0.1, 255, 0, 0, 0, 0, 6.0, 0.0, 0.0);
 	    ShowHudText(attacker, 0, "X");
-		
-	    for(int i = 1; i <= MaxClients; i++)
-		{
-            if (!IsClientInGame(i) || !IsClientObserver(i))
-		    	continue;
-				
-		    spmode = GetEntProp(i, Prop_Send, "m_iObserverMode");
-		    if (spmode != 4 && spmode != 5)
-			    continue;
-			
-		    target = GetEntPropEnt(i, Prop_Send, "m_hObserverTarget");	
-		    if (target == attacker)
-			{
-		        SetHudTextParams(-1.0, -1.0, 0.1, 255, 0, 0, 0, 0, 6.0, 0.0, 0.0);
-	            ShowHudText(i, 0, "X"); 
-		    }
-	    }
 	}
 	return Plugin_Continue;
 }
