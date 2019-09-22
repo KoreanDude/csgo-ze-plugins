@@ -255,10 +255,7 @@ public Action OnTakeDamage(int entity, int &attacker, int &inflictor, float &dam
 		CloseHandle(PrintCounter);
 		PrintCounter = INVALID_HANDLE;
 		
-		if(!IsValidEntity(caller))
-			return Plugin_Continue;
-			
-		if(IsValidEntity(entity) != IsValidClient(attacker))
+		if(!IsValidEntity(caller) || !IsValidClient(attacker))
 			return Plugin_Continue;
 		
 		SendHudMsg(activator, szString);
@@ -278,10 +275,7 @@ public Action OnTakeDamage(int entity, int &attacker, int &inflictor, float &dam
 		CloseHandle(PrintBreakable);
 		PrintBreakable = INVALID_HANDLE;
 		
-		if(!IsValidEntity(caller))
-			return Plugin_Continue;
-		
-		if(IsValidEntity(entity) != IsValidClient(attacker))
+		if(!IsValidEntity(caller) || !IsValidClient(attacker))
 			return Plugin_Continue;
 		
 		SendHudMsg(activator, szString);
