@@ -258,6 +258,8 @@ public Action HideTimer(Handle timer)
 public Action Hook_SetTransmit(int target, int client) 
 { 
 	if(!bEnabled) return Plugin_Continue;
+	if(!IsPlayerAlive(client) || !IsClientInGame(client)) return Plugin_Continue;
+	if(!IsPlayerAlive(target) || !IsClientInGame(target)) return Plugin_Continue;
 
 	if(g_HidePlayers[client][target])
 	{
