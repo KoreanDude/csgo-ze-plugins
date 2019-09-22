@@ -231,10 +231,10 @@ public Action PrintBossHitRanks()
 	Format(top3,sizeof(top3), "- Top3 Boss Hitters -\n1. %N - %i Hits\n2. %N - %i Hits\n3. %N - %i Hits", TopOne, Hits[TopOne], TopTwo, Hits[TopTwo], TopThree, Hits[TopThree]);
 	
 	char top4[512];
-	Format(top3,sizeof(top4), "- Top4 Boss Hitters -\n1. %N - %i Hits\n2. %N - %i Hits\n3. %N - %i Hits\n4. %N - %i Hits", TopOne, Hits[TopOne], TopTwo, Hits[TopTwo], TopThree, Hits[TopThree], TopFour, Hits[TopFour]);
+	Format(top4,sizeof(top4), "- Top4 Boss Hitters -\n1. %N - %i Hits\n2. %N - %i Hits\n3. %N - %i Hits\n4. %N - %i Hits", TopOne, Hits[TopOne], TopTwo, Hits[TopTwo], TopThree, Hits[TopThree], TopFour, Hits[TopFour]);
 	
 	char top5[512];
-	Format(top3,sizeof(top5), "- Top5 Boss Hitters -\n1. %N - %i Hits\n2. %N - %i Hits\n3. %N - %i Hits\n4. %N - %i Hits\n5. %N - %i Hits", TopOne, Hits[TopOne], TopTwo, Hits[TopTwo], TopThree, Hits[TopThree], TopFour, Hits[TopFour], TopFive, Hits[TopFive]);
+	Format(top5,sizeof(top5), "- Top5 Boss Hitters -\n1. %N - %i Hits\n2. %N - %i Hits\n3. %N - %i Hits\n4. %N - %i Hits\n5. %N - %i Hits", TopOne, Hits[TopOne], TopTwo, Hits[TopTwo], TopThree, Hits[TopThree], TopFour, Hits[TopFour], TopFive, Hits[TopFive]);
     
 	if(Hits[TopFive]>=5)
 	{ 
