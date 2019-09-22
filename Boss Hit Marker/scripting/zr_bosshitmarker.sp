@@ -104,7 +104,7 @@ public Action OnTakeDamage(int entity, int &attacker, int &inflictor, float &dam
 	    IsBossEntity(entity) && IsValidEntity(entity) && IsValidClient(attacker))
 	{
 		SetHudTextParams(-1.0, -1.0, 0.1, 255, 0, 0, 0, 0, 6.0, 0.0, 0.0);
-	    ShowHudText(attacker, GetDynamicChannel(5), "X");
+	    ShowHudText(attacker, 5, "X");
 	}
 	return Plugin_Continue;
 }
