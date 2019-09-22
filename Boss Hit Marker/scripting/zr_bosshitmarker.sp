@@ -100,12 +100,11 @@ public Action OnTakeDamage(int entity, int &attacker, int &inflictor, float &dam
 	CloseHandle(BossName);
 	BossName = INVALID_HANDLE;
 	
-	if (!IsBossEntity(caller)) return Plugin_Continue;
-
-	if (IsValidEntity(entity) && IsValidClient(attacker))
+	if (IsBossEntity(caller) && IsValidEntity(entity) && IsValidClient(attacker) ||
+	    IsBossEntity(entity) && IsValidEntity(entity) && IsValidClient(attacker))
 	{
-	    SetHudTextParams(-1.0, -1.0, 0.1, 255, 0, 0, 0, 0, 6.0, 0.0, 0.0);
-	    ShowHudText(attacker, 0, "X");
+		SetHudTextParams(-1.0, -1.0, 0.1, 255, 0, 0, 0, 0, 6.0, 0.0, 0.0);
+	    ShowHudText(attacker, GetDynamicChannel(5), "X");
 	}
 	return Plugin_Continue;
 }
