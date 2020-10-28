@@ -149,27 +149,6 @@ SEffectsOnClientHuman(client)
 }
 
 /**
- * Stop an ambient sound
- *  
- * @param sound	 The path to the sound file (relative to sounds/) 
- */
-SEffectsStopAmbientSound(const String:sound[])
-{
-	// x = client index.
-	for (new x = 1; x <= MaxClients; x++)
-	{
-		// If client isn't in-game, then stop.
-		if (!IsClientInGame(x))
-		{
-			continue;
-		}
-		
-		// Stop ambient sound.
-		StopSound(x, SNDCHAN_STATIC, sound);
-	}
-}
-
-/**
  * Replay an ambient sound
  * 
  * @param sound	 The path to the sound file (relative to sounds/)

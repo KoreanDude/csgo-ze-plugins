@@ -243,7 +243,6 @@ public Action:EventPlayerHurt(Handle:event, const String:name[], bool:dontBroadc
 	GetEventString(event, "weapon", weapon, sizeof(weapon));
 	
 	// Forward event to modules.
-	//ClassAlphaUpdate(index);
 	InfectOnClientHurt(index, attacker, weapon);
 	AccountOnClientHurt(index, attacker, dmg_health);
 	SEffectsOnClientHurt(index);
