@@ -4,4 +4,4 @@ The csgo ze plugins are mostly private plugins and hard to find. So I created th
 
 To get a more extended ze plugins: https://github.com/darkerz7/CSGO-Plugins
 
-Contact me: https://steamcommunity.com/id/tentenserver/
+Contact me: https://steamcommunity.com/id/ultrashim/
