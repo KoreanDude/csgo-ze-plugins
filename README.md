@@ -3,9 +3,10 @@
 I no longer run ze server so this repository will also not be updated, Hope this repository has been helpful to many ze servers.
 
 <b>To get a more extended ze plugins:</b><br>
+https://github.com/orgs/srcdslab<br>
 https://github.com/darkerz7/CSGO-Plugins<br>
+https://github.com/oylsister?tab=repositories<br>
 https://github.com/Stewart-Anubis?tab=repositories<br>
-https://github.com/oylsister?tab=repositories
 
 <b>ze configs:</b><br>
 https://github.com/gflclan-cs-go-ze/ZE-Configs<br>
